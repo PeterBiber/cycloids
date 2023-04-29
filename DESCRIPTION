@@ -1,8 +1,8 @@
 Package: cycloids
 Type: Package
 Title: cycloids
-Version: 1.0
-Date: 2013-10-24
+Version: 1.0.1
+Date: 2023-04-29
 Author: Peter Biber
 Maintainer: Peter Biber <castor.fiber@gmx.de>
 Description: Tools for calculating coordinate representations of
@@ -13,3 +13,4 @@ Description: Tools for calculating coordinate representations of
 License: GPL-3
 Collate:
     'ZFunktionen.r'
+Encoding: UTF-8

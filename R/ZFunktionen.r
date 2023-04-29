@@ -43,8 +43,8 @@ kgV <- function(a, b) {
 
 #-------------------------------------------------------------------------------
 
-# npeaks: Gibt die Anzahl der Spitzen bzw. Schlaufen des Zykloiden zurück.
-# A, a: natürliche Zahlen, kennzeichnen Verhältnis der Radien des fixen (A)
+# npeaks: Gibt die Anzahl der Spitzen bzw. Schlaufen des Zykloiden zurueck.
+# A, a: natuerliche Zahlen, kennzeichnen Verhaeltnis der Radien des fixen (A)
 # und des bewegten Kreises (a)
 
 npeaks <- function(A, a) {
@@ -60,25 +60,25 @@ npeaks <- function(A, a) {
 
 #-------------------------------------------------------------------------------
 
-# zykloid: Liefert einen data frame zurück, der die x-y Werte eines
-# Hypo- oder Epizykloiden enthält.
-# A: Radius des festen Kreises    A, a: Natürliche Zahlen
+# zykloid: Liefert einen data frame zurueck, der die x-y Werte eines
+# Hypo- oder Epizykloiden enthaelt.
+# A: Radius des festen Kreises    A, a: Natuerliche Zahlen
 # a: Radius des rollenden Kreises
 # lambda: Relative Position des Spurpunktes auf a
-# hypo: TRUE - rollender Kreis läuft im Inneren des festen Kreises, 
-#       FALSE - rollender Kreis läuft auf der Außenseite des festen Kreises
-# steps: Zahl der Winkelschritte pro Umlauf für die Bewegung des Mittelpunkts
+# hypo: TRUE - rollender Kreis laeuft im Inneren des festen Kreises, 
+#       FALSE - rollender Kreis laeuft auf der Aussenseite des festen Kreises
+# steps: Zahl der Winkelschritte pro Umlauf fuer die Bewegung des Mittelpunkts
 # des rollenden Kreises.
 # start: Startwinkel im festen Kreis gegen den Uhrzeigersinn
 
-# TODO: Teste Startpunkt für negatives lambda.
+# TODO: Teste Startpunkt fuer negatives lambda.
 
 zykloid <- function(A, a, lambda, hypo = TRUE, steps = 360, start = pi/2) {
 
            if (((A == round(A)) & (a == round(a))) &
                ((A > 0) & (a > 0))) {
 
-               # Zahl der Umläufe des rollenden Kreises bis zum Schluss
+               # Zahl der Umlaeufe des rollenden Kreises bis zum Schluss
                # der Figur.
                n <- kgV(A, a) / A
                
@@ -144,7 +144,7 @@ zykloid.scaleAa <- function(A, a, lambda, hypo = TRUE, Cx = 0, Cy = 0, RadiusAa 
            # Ein data.frame kommt nur heraus, wenn es geklappt hat (sonst NA)
            if (is.data.frame(M)) { 
            
-               if (hypo) Norm <- abs(A - a) + abs(lambda) * a # Gilt auch für a > A
+               if (hypo) Norm <- abs(A - a) + abs(lambda) * a # Gilt auch fuer a > A
                else      Norm <-     A + a  + abs(lambda) * a
 
                M[, "x"] <- M[, "x"] * RadiusAa / Norm + Cx
