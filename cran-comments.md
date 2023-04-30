@@ -1,3 +1,8 @@
+## Title fixed
+
+The title field in the DESCRIPTION file contains nom information beyond the mere
+package name
+
 ## Non-ASCII characters fixed
 
 Kurt Hornik made me aware of non-ASCII characters in some comments (email, 

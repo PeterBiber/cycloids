@@ -1,8 +1,9 @@
 Package: cycloids
 Type: Package
-Title: cycloids
+Title: Tools for Calculating Hypocycloids, Epicycloids, Hyptrochoids, and
+  Epitrochoids
 Version: 1.0.1
-Date: 2023-04-29
+Date: 2023-04-30
 Author: Peter Biber
 Maintainer: Peter Biber <castor.fiber@gmx.de>
 Description: Tools for calculating coordinate representations of
