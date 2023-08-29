@@ -14,13 +14,6 @@ Functions for calculating coordinate representations of hypocycloids,
  function in R.
 }
 \details{
-\tabular{ll}{
-Package: \tab cycloids\cr
-Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2013-10-24\cr
-License: \tab GPL-3\cr
-}
 This package has been written for calculating cartesian coordinate
  representations of hypocycloids, epicyloids, hypotrochoids, and
  epitrochoids (altogether called 'cycloids' here). These can be

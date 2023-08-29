@@ -1,15 +1,8 @@
-## Title fixed
+## cycloids-package.Rd fixed
 
-The title field in the DESCRIPTION file contains nom information beyond the mere
-package name
-
-## Non-ASCII characters fixed
-
-Kurt Hornik made me aware of non-ASCII characters in some comments (email, 
-2023-04-26). This issue was fixed by
-
-* transliterating all non-ASCII characters, and
-* adding the entry `Encoding: UTF-8` to the DESCRIPTION file
+The file *cycloids-package.Rd* contained a table with package metadata that 
+partly disagreed with the entries in DESCRIPTION. As suggested by Kurt Hornik 
+(email, 2023-08-19) this unnecessary table was removed.
 
 ## R CMD check results
 

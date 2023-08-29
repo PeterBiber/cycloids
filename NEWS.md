@@ -1,3 +1,7 @@
+# cycloids 1.0.2
+Removed duplicated information from 'cycloids-package.RD'
+
+
 # cycloids 1.0.1
 
 * Removed all non-ASCII characters from comments.
